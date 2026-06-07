@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Explorer Gallery</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <i class="fa-solid fa-earth-asia"></i>
+        Travel Explorer
+    </div>
+
+    <ul>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#stats">Stats</a></li>
+    </ul>
+
+    <button id="themeBtn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+</nav>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <h1>Explore My Travel Gallery 🌍</h1>
+
+        <p>
+            From Paris and London to Switzerland,
+            Japan, Scotland and Araku Valley.
+        </p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search destinations..."
+        >
+
+    </div>
+
+</header>
+
+<section class="filters">
+
+    <button onclick="filterGallery('all')">
+        All
+    </button>
+
+    <button onclick="filterGallery('city')">
+        Cities
+    </button>
+
+    <button onclick="filterGallery('nature')">
+        Nature
+    </button>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+    <div class="card city" data-name="paris">
+        <img src="images/img1.jpg" alt="Paris">
+        <div class="overlay">
+            <h3>Paris</h3>
+            <p>France</p>
+        </div>
+    </div>
+
+    <div class="card city" data-name="london">
+        <img src="images/img2.jpg" alt="London">
+        <div class="overlay">
+            <h3>London</h3>
+            <p>England</p>
+        </div>
+    </div>
+
+    <div class="card nature" data-name="scotland">
+        <img src="images/img3.jpg" alt="Scotland">
+        <div class="overlay">
+            <h3>Scotland</h3>
+            <p>United Kingdom</p>
+        </div>
+    </div>
+
+    <div class="card nature" data-name="switzerland">
+        <img src="images/img4.jpg" alt="Switzerland">
+        <div class="overlay">
+            <h3>Switzerland</h3>
+            <p>Europe</p>
+        </div>
+    </div>
+
+    <div class="card city" data-name="japan">
+        <img src="images/img5.jpg" alt="Japan">
+        <div class="overlay">
+            <h3>Japan</h3>
+            <p>Asia</p>
+        </div>
+    </div>
+
+    <div class="card nature" data-name="araku">
+        <img src="images/img6.jpg" alt="Araku Valley">
+        <div class="overlay">
+            <h3>Araku Valley</h3>
+            <p>India</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="stats" id="stats">
+
+    <div class="stat">
+        <h2>6+</h2>
+        <p>Destinations</p>
+    </div>
+
+    <div class="stat">
+        <h2>5</h2>
+        <p>Countries/Regions</p>
+    </div>
+
+    <div class="stat">
+        <h2>100%</h2>
+        <p>Responsive</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Travel Explorer Gallery</p>
+</footer>
+
+<div id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button id="prev">❮</button>
+
+    <img id="lightbox-img">
+
+    <button id="next">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
